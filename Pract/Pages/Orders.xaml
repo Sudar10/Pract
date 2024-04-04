@@ -1,0 +1,25 @@
+﻿<Page x:Class="Pract.Pages.Orders"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Pract.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Orders" Background="White">
+
+    <Grid>
+        <TextBlock TextWrapping="Wrap" Margin="253,185,441,249"><Run Language="ru-ru" Text="ID покупателя"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="253,227,441,207"><Run Language="ru-ru" Text="Сумма покупки"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="253,267,441,165"><Run Language="ru-ru" Text="Дата покупки"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="253,143,441,291"><Run Language="ru-ru" Text="Номер заказа"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Text="Редактирование и просмотр информации о заказах" Margin="284,33,224,350" FontSize="20"/>
+        <Button x:Name="btnSave" Content="Сохранить" HorizontalAlignment="Right" Margin="0,308,330,0" VerticalAlignment="Top" Background="#FF5A82E3" Click="btnSave_Click" Height="28" Width="80"/>
+        <TextBox x:Name="tbName" HorizontalAlignment="Left" Margin="364,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" />
+        <TextBox x:Name="tbFamilia" HorizontalAlignment="Left" Margin="364,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" />
+        <TextBox x:Name="tbPassNum" HorizontalAlignment="Left" Margin="364,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" />
+        <TextBox x:Name="tbOtchestvo" HorizontalAlignment="Left" Margin="364,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" />
+        <Button x:Name="btnNext" Content="Далее" HorizontalAlignment="Right" Margin="0,308,245,0" VerticalAlignment="Top" Background="#FF5A82E3" Click="btnSave_Click" Height="28" Width="80"/>
+        <Button x:Name="btnBack" Content="Назад" HorizontalAlignment="Right" Margin="0,308,415,0" VerticalAlignment="Top" Background="#FF5A82E3" Click="btnSave_Click" Height="28" Width="80"/>
+    </Grid>
+</Page>
